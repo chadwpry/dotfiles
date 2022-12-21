@@ -1,0 +1,15 @@
+# VIM
+
+## LINKING
+
+if [ ! -d "(realpath ~/.vim)" ]; then
+	cp -r ~/dot-files/vim/.vim ~/.vim
+fi
+
+if [ ! -d "(realpath ~/.vimrc)" ]; then
+	cp -r ~/dot-files/vim/.vimrc ~/.vimrc
+fi
+
+## INSTALLATION
+~/dot-files/vim/install
+
