@@ -13,3 +13,14 @@ fi
 ## INSTALLATION
 ~/dot-files/vim/install
 
+
+# GIT
+
+## INSTALLATION
+cp ~/dot-files/git/.gitconfig ~/.gitconfig
+
+
+# FZF
+
+## INSTALLATION
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf

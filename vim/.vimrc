@@ -1,4 +1,14 @@
+" pathogen
 execute pathogen#infect()
+
+" fzf
+call plug#begin('~/.vim/plugged')
+
+Plug '~/.fzf'
+set rtp+=~/.fzf
+nmap <C-P> :FZF<CR>
+
+
 syntax on
 filetype plugin indent on
 
@@ -56,3 +66,14 @@ set cursorline
 
 " :W sudo saves the file when the file is open in readonly mode
 command W w !sudo ree % > /dev/null
+
+
+" line numbering
+:set number
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
+
