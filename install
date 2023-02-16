@@ -11,13 +11,24 @@ if [ ! -d "(realpath ~/.vimrc)" ]; then
 fi
 
 ## INSTALLATION
-~/dot-files/vim/install
+./vim/install
+
+
+# NVIM
+
+## INSTALLATION
+
+echo
+echo install nvim via brew or apt
+echo
+
+./nvim/install
 
 
 # GIT
 
 ## INSTALLATION
-cp ~/dot-files/git/.gitconfig ~/.gitconfig
+cp ./git/.gitconfig ~/.gitconfig
 
 
 # FZF
