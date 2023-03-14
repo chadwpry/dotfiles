@@ -25,6 +25,9 @@ nnoremap <silent> ,1 :set background=light<CR>
 nnoremap <silent> ,2 :set background=dark<CR>
 nnoremap <silent> ,3 :colorscheme gruvbox<CR>
 nnoremap <silent> ,4 :colorscheme solarized<CR>
+nnoremap <silent> ,q :nohl<CR>
+
+xnoremap("<leader>p", "\"_dP")
 
 set splitright
 set splitbelow
