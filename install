@@ -2,7 +2,7 @@
 
 mkdir -p ~/.config
 
-cp -r ~/dot-files./config/* ~/.config/
+cp -r ~/dot-files./config/nvim ~/.config/nvim
 
 
 # VIM
