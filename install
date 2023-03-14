@@ -1,35 +1,34 @@
-# .config
+# .local
 
 mkdir -p ~/.config
 
-cp -r ~/dot-files./config/nvim ~/.config/nvim
+rm -rf ~/.config/nvim
+cp -r ~/dot-files/.config/nvim ~/.config/nvim
 
 
 # VIM
 
 ## LINKING
 
-if [ ! -d "(realpath ~/.vim)" ]; then
-	cp -r ~/dot-files/vim/.vim ~/.vim
-fi
+#if [ ! -d "(realpath ~/.vim)" ]; then
+	#cp -r ~/dot-files/vim/.vim ~/.vim
+#fi
 
-if [ ! -d "(realpath ~/.vimrc)" ]; then
-	cp -r ~/dot-files/vim/.vimrc ~/.vimrc
-fi
+#if [ ! -d "(realpath ~/.vimrc)" ]; then
+	#cp -r ~/dot-files/vim/.vimrc ~/.vimrc
+#fi
 
 ## INSTALLATION
-./vim/install
+#./vim/install
 
 
 # NVIM
 
-## INSTALLATION
+## INSTALL
 
-echo
-echo install nvim via brew or apt
-echo
+rm -rf ~/.local/share/nvim
 
-./nvim/install
+git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 
 # GIT
@@ -41,4 +40,4 @@ cp ./git/.gitconfig ~/.gitconfig
 # FZF
 
 ## INSTALLATION
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
