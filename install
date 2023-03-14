@@ -1,3 +1,10 @@
+# .config
+
+mkdir -p ~/.config
+
+cp -r ~/dot-files./config/* ~/.config/
+
+
 # VIM
 
 ## LINKING
@@ -17,7 +24,7 @@ fi
 # GIT
 
 ## INSTALLATION
-cp ~/dot-files/git/.gitconfig ~/.gitconfig
+cp ~/dot-files/nvim/.config ~/.config/nvim
 
 
 # FZF
