@@ -13,14 +13,17 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-
-  vim.cmd('colorscheme rose-pine')
-
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground')
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+  use 'nvim-treesitter/playground'
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
+
+  use 'nvim-tree/nvim-web-devicons'
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'nvim-tree/nvim-web-devicons', opt = true }
+  }
   
   use {
     'numToStr/Comment.nvim',
@@ -28,6 +31,18 @@ return require('packer').startup(function(use)
       require('Comment').setup()
     end
   }
+
+  use {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
+
+  -- use {
+  --   'stevearc/oil.nvim',
+  --   config = function() require('oil').setup() end
+  -- }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -51,4 +66,12 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+
+  use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'hsi/lapland.nvim' }
+  use { 'Mofiqul/dracula.nvim' }
+  use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+
+  vim.cmd[[ colorscheme lapland ]]
+
 end)

@@ -21,7 +21,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nv
 cp ./git/.gitconfig ~/.gitconfig
 
 
-# FZF
+# TMUX
 
 ## INSTALLATION
-#git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+rm ~/.tmux.conf
+cp .tmux.conf ~/.tmux.conf
