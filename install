@@ -6,22 +6,6 @@ rm -rf ~/.config/nvim
 cp -r ~/dot-files/.config/nvim ~/.config/nvim
 
 
-# VIM
-
-## LINKING
-
-#if [ ! -d "(realpath ~/.vim)" ]; then
-	#cp -r ~/dot-files/vim/.vim ~/.vim
-#fi
-
-#if [ ! -d "(realpath ~/.vimrc)" ]; then
-	#cp -r ~/dot-files/vim/.vimrc ~/.vimrc
-#fi
-
-## INSTALLATION
-#./vim/install
-
-
 # NVIM
 
 ## INSTALL
