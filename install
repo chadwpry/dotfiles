@@ -6,6 +6,20 @@ rm -rf ~/.config/nvim
 cp -r ~/dot-files/.config/nvim ~/.config/nvim
 
 
+# ZSH
+
+## INSTALL
+
+rm -rf ~/.oh-my-zsh
+echo removing existing .oh-my-zsh directory
+
+cp -r ./.oh-my-zsh ~/
+echo copied .oh-my-zsh directory
+
+cp ./.zshrc ~/
+echo copied .zshrc configuration
+
+
 # NVIM
 
 ## INSTALL
@@ -26,3 +40,10 @@ cp ./git/.gitconfig ~/.gitconfig
 ## INSTALLATION
 rm ~/.tmux.conf
 cp .tmux.conf ~/.tmux.conf
+
+
+# TMATE
+
+## INSTALLATION
+rm ~/.tmate.conf
+ln -s ~/.tmux.conf ~/.tmate.conf
