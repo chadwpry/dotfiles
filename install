@@ -3,7 +3,11 @@
 mkdir -p ~/.config
 
 rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+echo removed nvim hidden config and local directories
+
 cp -r ~/dot-files/.config/nvim ~/.config/nvim
+echo copied nvim config directory
 
 
 # ZSH
@@ -11,7 +15,7 @@ cp -r ~/dot-files/.config/nvim ~/.config/nvim
 ## INSTALL
 
 rm -rf ~/.oh-my-zsh
-echo removing existing .oh-my-zsh directory
+echo removed existing .oh-my-zsh directory
 
 cp -r ./.oh-my-zsh ~/
 echo copied .oh-my-zsh directory
@@ -24,26 +28,24 @@ echo copied .zshrc configuration
 
 ## INSTALL
 
-rm -rf ~/.local/share/nvim
+#rm -rf ~/.local/share/nvim
 
-git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+#git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 
 # GIT
 
 ## INSTALLATION
 cp ./git/.gitconfig ~/.gitconfig
+echo copied gitconfig
 
 
-# TMUX
+# TMUX/TMATE
 
 ## INSTALLATION
 rm ~/.tmux.conf
 cp .tmux.conf ~/.tmux.conf
-
-
-# TMATE
-
-## INSTALLATION
 rm ~/.tmate.conf
 ln -s ~/.tmux.conf ~/.tmate.conf
+
+echo removed and copied tmux and tmate configurations
