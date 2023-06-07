@@ -24,7 +24,10 @@ echo copied .zshrc configuration
 
 # NVIM
 
-sudo apt install neovim -y
+# if unix
+# sudo apt install neovim -y
+# if mac
+# brew install neovim
 
 
 # GIT
