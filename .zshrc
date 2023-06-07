@@ -108,3 +108,5 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 export PATH=/usr/local/bin:$PATH
+
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
