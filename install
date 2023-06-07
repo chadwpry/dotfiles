@@ -1,4 +1,4 @@
-# .local
+# .config && .local
 
 mkdir -p ~/.config
 
@@ -12,13 +12,11 @@ echo copied nvim config directory
 
 # ZSH
 
-## INSTALL
-
 rm -rf ~/.oh-my-zsh
 echo removed existing .oh-my-zsh directory
 
-cp -r ./.oh-my-zsh ~/
-echo copied .oh-my-zsh directory
+git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
+echo created .oh-my-zsh directory
 
 cp ./.zshrc ~/
 echo copied .zshrc configuration
@@ -26,23 +24,17 @@ echo copied .zshrc configuration
 
 # NVIM
 
-## INSTALL
-
-#rm -rf ~/.local/share/nvim
-
-#git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+sudo apt install neovim -y
 
 
 # GIT
 
-## INSTALLATION
 cp ./git/.gitconfig ~/.gitconfig
 echo copied gitconfig
 
 
 # TMUX/TMATE
 
-## INSTALLATION
 rm ~/.tmux.conf
 cp .tmux.conf ~/.tmux.conf
 rm ~/.tmate.conf
