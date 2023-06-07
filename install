@@ -6,7 +6,7 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 echo removed nvim hidden config and local directories
 
-cp -r ~/dot-files/.config/nvim ~/.config/nvim
+cp -r ./.config/nvim ~/.config/nvim
 echo copied nvim config directory
 
 
