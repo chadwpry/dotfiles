@@ -21,6 +21,7 @@ require'lazy'.setup({
   { 'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons', opt = true } },
   { 'numToStr/Comment.nvim' },
   { 'hsi/lapland.nvim' },
+  { 'numToStr/FTerm.nvim' },
   { 'rose-pine/neovim' },
   { 'Mofiqul/dracula.nvim' },
   { 'VonHeikemen/lsp-zero.nvim', branch = 'v1.x', dependencies = {
