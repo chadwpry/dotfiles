@@ -41,6 +41,6 @@ echo copied gitconfig
 rm $HOME/.tmux.conf
 cp .tmux.conf $HOME
 rm $HOME/.tmate.conf
-ln -s .tmux.conf $HOME
+ln -s $HOME/.tmux.conf $HOME/.tmate.conf
 
 echo removed and copied tmux and tmate configurations
