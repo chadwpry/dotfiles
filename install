@@ -1,24 +1,24 @@
 # .config && .local
 
-mkdir -p ~/.config
+mkdir -p $HOME/.config
 
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
+rm -rf $HOME/.config/nvim
+rm -rf $HOME/.local/share/nvim
 echo removed nvim hidden config and local directories
 
-cp -r ./.config/nvim ~/.config/nvim
+cp -r ./.config/nvim $HOME/.config/nvim
 echo copied nvim config directory
 
 
 # ZSH
 
-rm -rf ~/.oh-my-zsh
+rm -rf $HOME/.oh-my-zsh
 echo removed existing .oh-my-zsh directory
 
 git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
 echo created .oh-my-zsh directory
 
-cp ./.zshrc ~/
+cp ./.zshrc $HOME
 echo copied .zshrc configuration
 
 
@@ -32,15 +32,15 @@ echo copied .zshrc configuration
 
 # GIT
 
-cp ./git/.gitconfig ~/.gitconfig
+cp ./git/.gitconfig $HOME
 echo copied gitconfig
 
 
 # TMUX/TMATE
 
-rm ~/.tmux.conf
-cp .tmux.conf ~/.tmux.conf
-rm ~/.tmate.conf
-ln -s ~/.tmux.conf ~/.tmate.conf
+rm $HOME/.tmux.conf
+cp .tmux.conf $HOME
+rm $HOME/.tmate.conf
+ln -s .tmux.conf $HOME
 
 echo removed and copied tmux and tmate configurations
