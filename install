@@ -15,7 +15,7 @@ echo copied nvim config directory
 rm -rf $HOME/.oh-my-zsh
 echo removed existing .oh-my-zsh directory
 
-git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
+git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
 echo created .oh-my-zsh directory
 
 cp ./.zshrc $HOME
