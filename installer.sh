@@ -3,7 +3,8 @@ rm -rf ~/.local/nvim
 rm -rf ~/.local/tmux
 rm -rf ~/.config/nvim
 rm -rf ~/.config/tmux
-echo removed old nvim and tmux .config and .local directories
+rm -rf ~/.tmux
+echo removed old nvim and tmux .config, .local, and .tmux directories
 
 # tmux package manager installation
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
