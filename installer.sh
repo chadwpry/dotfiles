@@ -1,8 +1,10 @@
 # clean up
-rm -rf ~/.local/nvim
-rm -rf ~/.local/tmux
-rm -rf ~/.config/share/nvim
-rm -rf ~/.config/state/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/tmux
+rm -rf ~/.local/state/tmux
+rm -rf ~/.local/share/vim-lsp-settings
+rm -rf ~/.config/nvim
 rm -rf ~/.config/tmux
 rm -rf ~/.tmux
 echo removed old nvim and tmux .config, .local, and .tmux directories
