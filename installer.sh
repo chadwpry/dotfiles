@@ -17,11 +17,11 @@ echo copied tmux configuration
 
 # create nvim config directory and copy base config files
 mkdir -p ~/.config/nvim
-cp -r ./nvim ~/.config/nvim
+cp -r ./nvim ~/.config
 echo copied nvim configuration
 
 # copy fonts to local machine for mac
-if [[ `uname` == "Darwin" ]]; then
+if [[ $OSTYPE == 'darwin'* ]]; then
   cp -rf ./fonts/*.ttf ~/Library/Fonts
   echo copied fonts on mac system
 fi
