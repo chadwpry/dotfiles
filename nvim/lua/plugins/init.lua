@@ -21,7 +21,7 @@ return {
   		ensure_installed = {
   			"lua-language-server", "stylua",
   			"html-lsp", "css-lsp" , "prettier",
-        "gopls", "gofumpt", "goimports-revisor", "golines", "delve",
+        "gopls", "gofumpt", "goimports-reviser", "golines", "delve",
   		},
   	},
   },
