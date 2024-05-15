@@ -32,3 +32,7 @@ fi
 # copy git configuration
 cp ./git/.gitconfig $HOME
 echo copied gitconfig
+
+# copy zsh config
+cp ./.zshrc ~/
+echo copied .zshrc
