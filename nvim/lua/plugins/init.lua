@@ -100,10 +100,9 @@ return {
   	},
   },
   {
-    "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
+    "nvimtools/none-ls.nvim",
     opts = function()
-      return require "configs/null-ls"
-    end,
+      return require "configs/none-ls"
+    end
   },
 }
