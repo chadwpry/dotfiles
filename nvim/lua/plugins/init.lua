@@ -19,9 +19,12 @@ return {
   	"williamboman/mason.nvim",
   	opts = {
   		ensure_installed = {
-  			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier",
+  			"lua-language-server",
+        "stylua", "html-lsp", "css-lsp" ,
+        "prettier", "eslint_d",
+        -- "rubocop", # install ruby development environment first
         "gopls", "gofumpt", "goimports-reviser", "golines", "delve",
+        "black", "isort",
   		},
   	},
   },
