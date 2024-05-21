@@ -13,6 +13,8 @@ alias pytest="python3 -m pytest -o markers=task"
 alias envvars='set -o allexport; source .env; set +o allexport'
 
 
+export GOBIN="$HOME/go/bin"
+
 export EDITOR='nvim'
 
 export NVM_DIR="$HOME/.nvm"
