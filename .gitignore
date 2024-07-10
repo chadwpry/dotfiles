@@ -3,3 +3,4 @@
 archived
 fonts/**/*.zip
 tmux/plugins
+Brewfile.lock.json
