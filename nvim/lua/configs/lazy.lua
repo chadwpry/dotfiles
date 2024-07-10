@@ -1,3 +1,5 @@
+vim.print("loading configs.lazy")
+
 return {
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },

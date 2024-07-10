@@ -16,27 +16,25 @@ return {
   },
   {
     "williamboman/mason.nvim",
-    opts = function()
-      return {
-        ensure_installed = {
-          "lua-language-server",
-          "stylua",
-          "html-lsp",
-          "css-lsp",
-          "prettier",
-          "eslint_d",
-          -- "rubocop", # install ruby development environment first
-          "gopls",
-          "gofumpt",
-          "goimports-reviser",
-          "golines",
-          "delve",
-          "black",
-          "isort",
-          "pylint",
-        },
-      }
-    end,
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
+        "eslint_d",
+        -- "rubocop", # install ruby development environment first
+        "gopls",
+        "gofumpt",
+        "goimports-reviser",
+        "golines",
+        "delve",
+        "black",
+        "isort",
+        "pylint",
+      },
+    }
   },
   {
     "nvimtools/none-ls.nvim",
@@ -60,16 +58,6 @@ return {
     },
     config = function()
       require("configs.nvim-dap")
-    end,
-  },
-  {
-    "mfussenegger/nvim-lint",
-    event = {
-      "BufWritePre",
-      "BufNewFile",
-    },
-    config = function()
-      require("configs.nvim-lint")
     end,
   },
   {
