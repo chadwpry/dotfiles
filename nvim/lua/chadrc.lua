@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "nightowl",
+  theme = "yoru",
   transparency = false,
 
   statusline = {
