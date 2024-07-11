@@ -56,9 +56,9 @@ return {
       "leoluz/nvim-dap-go",
       "nvim-neotest/nvim-nio",
     },
-    config = function()
-      require("configs.nvim-dap")
-    end,
+    -- opts = function()
+    --   require("configs.nvim-dap")
+    -- end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
