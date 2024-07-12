@@ -8,7 +8,6 @@ return {
   },
   {
     "stevearc/conform.nvim",
-    lazy = true,
     event = { "BufReadPre", "BufNewFile" },
     opts = function()
       require("configs.conform")
@@ -34,7 +33,7 @@ return {
         "isort",
         "pylint",
       },
-    }
+    },
   },
   {
     "nvimtools/none-ls.nvim",
