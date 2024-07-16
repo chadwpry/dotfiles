@@ -30,8 +30,8 @@ rm $HOME/.gitconfig
 echo removed git configuration link from $HOME
 
 # tmux package manager installation
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-echo cloned tmux package manager to user .tmux directory
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# echo cloned tmux package manager to user .tmux directory
 
 # create ~/.config if it doesn't exist already
 mkdir -p ~/.config
