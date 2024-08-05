@@ -43,6 +43,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
     opts = function()
       require("nvchad.configs.lspconfig").defaults()
       require("configs.lspconfig")
