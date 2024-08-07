@@ -20,6 +20,9 @@ echo removed nvim link from $XDG_CONFIG_HOME
 unlink ~/.config/tmux
 echo removed tmux link from $XDG_CONFIG_HOME
 
+unlink ~/.config/home-manager
+echo removed home-manager link from $XDG_CONFIG_HOME
+
 rm -rf ~/.tmux
 echo removed .tmux directory from $HOME
 
@@ -46,6 +49,13 @@ echo linked nvim configuration to $XDG_CONFIG_HOME
 
 ln -s $HOME/dotfiles/home-manager $HOME/.config/home-manager
 echo linked home-manager configuration to $XDG_CONFIG_HOME
+
+# sh <(curl -L https://nixos.org/nix/install) --daemon
+#
+# nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+# nix-channel --update
+#
+# nix-shell '<home-manager>' -A install
 
 # copy fonts to local machine for mac
 if [[ $OSTYPE == 'darwin'* ]]; then

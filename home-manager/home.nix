@@ -10,15 +10,21 @@
   home.packages = [
     pkgs.htop
     pkgs.fortune
+    pkgs.libiconv
+    pkgs.pkg-config
+    pkgs.openssl
+    pkgs.openssl.dev
     pkgs.git
     pkgs.neovim
     pkgs.tmux
     pkgs.go
+    pkgs.rustup
     pkgs.weechat
     pkgs.twitch-cli
     pkgs.tree
     pkgs.watch
     pkgs.watchman
+    pkgs.zsh
   ];
 
   # This value determines the Home Manager release that your
@@ -34,14 +40,33 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  # programs.emacs = {
-  #   enable = true;
-  #   extraPackages = epkgs: [
-  #     epkgs.nix-mode
-  #     epkgs.magit
-  #   ];
-  # };
-  #
+  programs.go = {
+    enable = true;
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    sessionVariables = {
+      EDITOR = "nvim";
+      PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+      PROMPT="%F{green}%*%f %F{cyan}%n@%m %F{blue}%~%f %F{red}%f$ ";
+    };
+    zplug = {
+      enable = true;
+      plugins = [
+        { name = "zsh-users/zsh-autosuggestions"; }
+      ];
+    };
+
+    history = {
+      size = 10000;
+      path = "${config.xdg.dataHome}/zsh/history";
+    };
+  };
+
   # services.gpg-agent = {
   #   enable = true;
   #   defaultCacheTtl = 1800;
