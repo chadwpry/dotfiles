@@ -25,8 +25,3 @@ if [ -f $HOME/.cargo/env ]; then
 fi
 
 export PATH=/usr/local/bin:$PATH:$HOME/go/bin
-
-if [[ $OSTYPE == 'linux-gnu' ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-
