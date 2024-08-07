@@ -21,13 +21,13 @@ unlink ~/.config/tmux
 echo removed tmux link from $XDG_CONFIG_HOME
 
 unlink ~/.config/home-manager
-echo removed home-manager link from $XDG_CONFIG_HOME
+echo removed home-manager from $XDG_CONFIG_HOME/.config
 
 rm -rf ~/.tmux
 echo removed .tmux directory from $HOME
 
-rm $HOME/.zshrc
-echo removed zsh configuration link from $HOME
+# rm $HOME/.zshrc
+# echo removed zsh configuration link from $HOME
 
 rm $HOME/.gitconfig
 echo removed git configuration link from $HOME
@@ -47,8 +47,8 @@ echo linked tmux configuration to $XDG_CONFIG_HOME
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 echo linked nvim configuration to $XDG_CONFIG_HOME
 
-ln -s $HOME/dotfiles/home-manager $HOME/.config/home-manager
-echo linked home-manager configuration to $XDG_CONFIG_HOME
+ln -s $HOME/dotfiles/home-manager $HOME/.config
+echo linked home-manager configuration to $XDG_CONFIG_HOME/.local/share
 
 # sh <(curl -L https://nixos.org/nix/install) --daemon
 #
@@ -68,5 +68,5 @@ ln -s $HOME/dotfiles/git/.gitconfig $HOME
 echo linked git configuration to $HOME
 
 # link zsh configuration
-ln -s $HOME/dotfiles/.zshrc $HOME
-echo linked zsh configuration to $HOME
+# ln -s $HOME/dotfiles/.zshrc $HOME
+# echo linked zsh configuration to $HOME
