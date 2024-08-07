@@ -3,27 +3,40 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "observable";
-  home.homeDirectory = "/home/observable";
+  home.username = "shadow";
+  home.homeDirectory = "/Users/shadow";
 
   # Packages that should be installed to the user profile.
   home.packages = [
-    pkgs.htop
+    pkgs.awscli
+    pkgs.azure-cli
+    pkgs.boost
+    pkgs.cmake
+    pkgs.cocoapods
+    pkgs.docker-compose
+    pkgs.ffmpeg
     pkgs.fortune
+    pkgs.git
+    pkgs.glib
+    pkgs.go
+    pkgs.htop
+    pkgs.jq
     pkgs.libiconv
-    pkgs.pkg-config
+    pkgs.neovim
     pkgs.openssl
     pkgs.openssl.dev
-    pkgs.git
-    pkgs.neovim
-    pkgs.tmux
-    pkgs.go
+    pkgs.pkg-config
+    pkgs.pulumi
+    pkgs.readline
+    pkgs.ripgrep
     pkgs.rustup
-    pkgs.weechat
-    pkgs.twitch-cli
+    pkgs.tmux
     pkgs.tree
+    pkgs.twitch-cli
     pkgs.watch
     pkgs.watchman
+    pkgs.websocat
+    pkgs.weechat
     pkgs.zsh
   ];
 
