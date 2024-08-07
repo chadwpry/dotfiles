@@ -28,6 +28,7 @@
     pkgs.pkg-config
     pkgs.pulumi
     pkgs.readline
+    pkgs.redis
     pkgs.ripgrep
     pkgs.rustup
     pkgs.tmux
