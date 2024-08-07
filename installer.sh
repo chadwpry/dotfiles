@@ -44,6 +44,9 @@ echo linked tmux configuration to $XDG_CONFIG_HOME
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 echo linked nvim configuration to $XDG_CONFIG_HOME
 
+ln -s $HOME/dotfiles/home-manager $HOME/.config/home-manager
+echo linked home-manager configuration to $XDG_CONFIG_HOME
+
 # copy fonts to local machine for mac
 if [[ $OSTYPE == 'darwin'* ]]; then
   cp -rf $HOME/dotfiles/fonts/*.ttf ~/Library/Fonts
