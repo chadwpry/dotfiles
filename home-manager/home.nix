@@ -18,7 +18,9 @@
     pkgs.fortune
     pkgs.git
     pkgs.glib
+    pkgs.gnupg
     pkgs.go
+    pkgs.gpgme
     pkgs.htop
     pkgs.jq
     pkgs.libiconv
