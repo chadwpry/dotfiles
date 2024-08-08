@@ -10,7 +10,6 @@
   home.packages = [
     pkgs.awscli
     pkgs.azure-cli
-    pkgs.boost
     pkgs.cmake
     pkgs.cocoapods
     pkgs.docker-compose
