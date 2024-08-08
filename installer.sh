@@ -26,12 +26,6 @@ echo removed home-manager from $XDG_CONFIG_HOME/.config
 rm -rf ~/.tmux
 echo removed .tmux directory from $HOME
 
-# rm $HOME/.zshrc
-# echo removed zsh configuration link from $HOME
-
-rm $HOME/.gitconfig
-echo removed git configuration link from $HOME
-
 # tmux package manager installation
 # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # echo cloned tmux package manager to user .tmux directory
@@ -63,10 +57,3 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   echo copied fonts on mac system
 fi
 
-# link git configuration
-ln -s $HOME/dotfiles/git/.gitconfig $HOME
-echo linked git configuration to $HOME
-
-# link zsh configuration
-# ln -s $HOME/dotfiles/.zshrc $HOME
-# echo linked zsh configuration to $HOME
